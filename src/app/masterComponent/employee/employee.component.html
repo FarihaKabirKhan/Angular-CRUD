@@ -1,0 +1,15 @@
+<p>employee works!</p>
+<div class="row">
+    <div class="col-4">
+    <h1>{{employName}}</h1>
+    <input type="text" value="{{enpId}}" placeholder="type">
+    </div>
+    <div [class]="myClass">
+    Hi
+    </div>
+    <div>
+    <!-- <button class="btn-success" onclick="showAlert('welcome Angular 18')">show Welcome</button> -->
+    <button class="btn-success" (click)="showAlert('welcome Angular 18')">show Welcome</button>
+    <span (click)="showAlert('This is from span')">Click Me</span>
+    </div>
+</div>

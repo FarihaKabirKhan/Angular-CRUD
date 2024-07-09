@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, Signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -18,7 +18,8 @@ enpId:number=123;
 isBangladeshi:boolean=true;
 currentDate:Date=new Date();
 myClass:string="bg-primary";
-
+startName:string="kari";
+MyFatherName=signal("Ahmed");
 
 constructor(){
 
@@ -29,6 +30,7 @@ showAlert(message:string){
 }
 changeCourse(){
   this.employName='Khan'
+  this.MyFatherName.set("Chaiton")
 }
 }
 

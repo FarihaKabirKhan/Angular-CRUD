@@ -15,5 +15,12 @@
     </div>
     <div>
         <input type="text"[(ngModel)]="employName"/> - {{employName}}
+        <input type="checkbox"[(ngModel)]="isBangladeshi"/>
+        <select [(ngModel)]="startName">
+            <option value="">Select</option>
+            <option value="Kasfi">Kasfi</option>
+            <option value="kari">kari</option>
+        </select>
+        <h1>{{MyFatherName()}}</h1>
     </div>
 </div>

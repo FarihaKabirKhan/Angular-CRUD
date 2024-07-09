@@ -11,5 +11,9 @@
     <!-- <button class="btn-success" onclick="showAlert('welcome Angular 18')">show Welcome</button> -->
     <button class="btn-success" (click)="showAlert('welcome Angular 18')">show Welcome</button>
     <span (click)="showAlert('This is from span')">Click Me</span>
+    <button class="btn-success" (click)="changeCourse()">Change Name</button>
+    </div>
+    <div>
+        <input type="text"[(ngModel)]="employName"/> - {{employName}}
     </div>
 </div>

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-employee',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './employee.component.html',
   styleUrl: './employee.component.css'
 })
@@ -25,6 +26,9 @@ constructor(){
 showAlert(message:string){
   alert(message)
 
+}
+changeCourse(){
+  this.employName='Khan'
 }
 }
 

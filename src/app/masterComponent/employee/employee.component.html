@@ -24,3 +24,77 @@
         <h1>{{MyFatherName()}}</h1>
     </div>
 </div>
+
+<div class="mt-2 p-2  bg-secondary text-white rounded">
+    <h1>Structure Directive</h1>
+
+</div>
+<div class="row  pt-3">
+    <div class="col-3">
+    <div *ngIf="isDivVisible"class="bg-danger p-3 text-white text-center">
+        <h4>Div 1 </h4>
+    </div>
+</div>
+<div *ngIf="isDiv2Visible"class="col-2">
+    <div class="bg-success p-3 text-white text-center">
+        <h4>Div 2 </h4>
+    </div>
+</div>
+<div class="col-3">
+    <div *ngIf="num1==num2" class="bg-warning p-3 text-center  text-white">
+        <h4>Div 3</h4>
+    </div>
+</div>
+<div class="col-2">
+    <div *ngIf="isActive" class="bg-info p-3 text-center  text-white">
+        <h4>Div 4</h4>
+    </div>
+</div>
+<div class="col-2">
+    <div *ngIf="SelectedState=='USA'" class="bg-light p-3 text-center  text-black">
+        <h4>Div 5</h4>
+    </div>
+</div>
+
+
+
+
+
+</div>
+<div class="row pt-3">
+    <div class="col-3 text-center">
+        <button (click)="HideDiv1()" class="btn btn-success">Hide</button>
+        <button (click)="ShowDiv1()" class="btn btn-primary mx-1">Show</button>
+    </div>
+
+    <div class="col-2 text-white text-center">
+        <button (click)="Toggle()" class="btn btn-primary">Toggle</button>
+    </div>
+
+   <div class="col-3 text-white">
+     <div style="display: flex; align-items: center;">
+       <input type="text" [(ngModel)]="num1" placeholder="num1" style="width: 60px; margin-right: 5px;" />
+       <input type="text" [(ngModel)]="num2" placeholder="num2" style="width: 60px;" />
+     </div>
+   </div>
+    <div class="col-2">
+        <div  style="display: flex;align-items: center;">
+            <input [(ngModel)]="isActive" type="checkbox"class="width-50" />
+        
+        
+        </div>
+        </div>
+
+        <div class="col-2">
+            <div  style="display: flex;align-items: center;">
+              <select [(ngModel)]="SelectedState">
+                <option value="">Select State</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="BD">BD</option>
+              </select>
+            
+            
+            </div>
+            </div>
+</div>

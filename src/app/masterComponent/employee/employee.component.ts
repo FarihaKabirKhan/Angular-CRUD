@@ -60,6 +60,11 @@ HideDiv1(){
   num2:string='';
   isActive:boolean=false;
   SelectedState:string='';
+
+
+  //ngFor
+
+  cityArray:string[]=['Dhaka','Mym','Shy','Chitta']
 }
 
 
